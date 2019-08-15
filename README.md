@@ -4,10 +4,10 @@ A plugin for flutter that functions to get list of installed application package
 
 ## Installation
 
-First, add `pit_sms_call_log` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
+First, add `pit_get_application` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
 ```
-pit_sms_call_log: ^0.1.0
+pit_get_application: ^0.1.0
 ```
 
 ## Example for Get List Application Package
