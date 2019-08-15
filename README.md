@@ -12,5 +12,5 @@ pit_sms_call_log: ^0.1.0
 
 ## Example for Get List Application Package
 ```
-     List<dynamic> appPackage = awaitPitGetApplication.getListApplication;
+     List<dynamic> appPackage = await PitGetApplication.getListApplication;
 ```
