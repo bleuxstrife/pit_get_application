@@ -7,7 +7,7 @@ A plugin for flutter that functions to get list of installed application package
 First, add `pit_get_application` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
 ```
-pit_get_application: ^0.1.0+3
+pit_get_application: ^0.1.0+4
 ```
 
 ## Example for Get List Application Package

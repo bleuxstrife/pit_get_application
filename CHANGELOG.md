@@ -1,3 +1,6 @@
+## 0.1.0+4
+* On Ios change result to result(FlutterMethodNotImplemented)
+
 ## 0.1.0+3
 * Fix Bug
 
