@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
 
-  List<dynamic> appPackage = [];
+  List<String> appPackage = [];
   @override
   void initState() {
     super.initState();
@@ -23,10 +23,10 @@ class _MyAppState extends State<MyApp> {
 
 
   Future<void> initPlatformState() async {
-    List<dynamic> appPackage = [];
+    List<String> appPackage = [];
 
     try {
-      appPackage = await PitGetApplication.getListApplication;
+      appPackage = await PitGetApplication.getAllApplication;
     } on PlatformException {
       print("error");
     }
@@ -44,12 +44,33 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('List App Package :\n$appPackage'),
+        body: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text("List App Package : "),
+              _buildItemAppPackage()
+            ],
+          ),
         ),
       ),
     );
   }
+
+  _buildItemAppPackage(){
+    List<Widget> item = [];
+
+    appPackage.forEach((app){
+      item.add(
+          Container(
+            margin: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16.0),
+            child: Text(app),
+          ));
+    });
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: item,);
+
+  }
 }
+
 
 ```
