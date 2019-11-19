@@ -40,7 +40,6 @@ public class PitGetApplicationPlugin implements MethodCallHandler {
             try {
                 List<String> listApp = getAllApplication();
                 result.success(listApp);
-                Log.d("Success", "getListApplication:" + listApp);
             } catch (Exception e) {
                 e.printStackTrace();
                 result.error("Error", "Error getListApplication : " + e.getLocalizedMessage(), e);

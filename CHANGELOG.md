@@ -1,3 +1,6 @@
+## 0.1.2
+* Version 0.1.2, Delete Log
+
 ## 0.1.1
 * Version 0.1.1, Fix Bug and Enchance Code
 
