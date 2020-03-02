@@ -1,3 +1,6 @@
+## 0.1.3
+* Fix for IOS
+
 ## 0.1.2
 * Version 0.1.2, Delete Log
 

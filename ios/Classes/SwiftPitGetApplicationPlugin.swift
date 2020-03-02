@@ -9,6 +9,6 @@ public class SwiftPitGetApplicationPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    result(FlutterMethodNotImplemented)
+    result([String]())
   }
 }
